@@ -1,0 +1,14 @@
+<h1>{{this.name}}</h1>
+
+<!-- open up, your browser dev console -->
+{{log this.person}}
+
+<p>Updated Value is: {{this.bindableVariable}}</p>
+
+<ol>
+    {{#each this.persons as |item|}}
+        <li>{{otem.name}}</li>
+    {{/each}}
+</ol>
+
+<button {{on "click" this.onClick}}>Click Me!</button>
