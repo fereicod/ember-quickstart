@@ -7,4 +7,5 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('welcome', {path: '/:app_code'}, function(){});
 });

@@ -1,6 +1,10 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+{{!#component  
+    greetingMSG='Hello From, DCI Component'
+    functionRef = this.parentFunc
+    }}
 
-{{outlet}}
+<h1> Welcome Here! </h1>
+{{!/component}}
+
+<LinkTo class="" @route="welcome" @model="myappcode">Welcome</LinkTo>
 
